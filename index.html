@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Beauty Box</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        
+            <!-- Header -->
+            <header class="header">
+                <img src="img/logo.png" alt="logo" class="header__logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-bubble"></use>
+                        </svg>
+                        <span class="user-nav__notiffication">2</span>
+                    </div>
+
+                    <div class="user-nav__user">
+                        <span class="user-nav__user-name">Theresa Webb</span>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Sidebar -->
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active" id="home-tab">
+                            <a href="#home" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-home3"></use>
+                                </svg>
+                                <span class="side-nav__itemName">Home</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item" id="gallery-tab">
+                            <a href="#gallery" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-images"></use>
+                                </svg>
+                                <span class="side-nav__itemName">Gallery</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item" id="stylists-tab">
+                            <a href="#stylists" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-users"></use>
+                                </svg>
+                                <span>Stylists</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item" id="package-tab">
+                            <a href="#package" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-cart"></use>
+                                </svg>
+                                <span>Packages</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="copyright">
+                        created by michaelaangelaaustria@gmail &copy; <span class="dynamicYear">year</span>
+                    </div>
+                </nav> 
+
+                <!-- Content -->
+                <main class="salon-view  " id="home">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/gallery-1.jpg" alt="Gallery 1" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/gallery-4.jpg" alt="Gallery 1" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/gallery-2.jpg" alt="Gallery 1" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/gallery-3.jpg" alt="Gallery 1" class="gallery__photo">
+                        </figure>
+                    </div>
+
+                    <div class="overview">
+                        <div class="overview__left">
+                            <h1 class="heading-primary">Beauty Box</h1>
+                            <div class="ratingcategoryContainer">
+                                <div>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                </div>
+                                <h6 class="ratingcategoryContainer__category">Hair Salon</h6>
+                            </div>
+                            
+                        </div>
+
+                        <div class="overview__right">
+                            <button class="btn">
+                                <span class="btn__visible">Book Now</span>
+                                <span class="btn__invisible">Book an appointment</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="salon-view-content">
+                        <div class="promo shadow radius">
+                            <h3 class="promo__text heading-secondary">📣 Ongoing promos for the month of September! Don't miss out! ✂️
+                            </h3>
+                        </div>
+
+                        <div class="detail">
+                            <div class="description">
+                                <div class="contentContainer shadow radius">
+                                    <p class="paragraph">
+                                        We are a salon that cares about you. Our goal is to make you feel like the most beautiful and special person in the world. We want you to be able to look and feel your best, so we've created a hair care experience that's second to none.
+                                    </p>
+                                    <p class="paragraph">
+                                        Our stylists are experts in cutting, coloring, highlights and lowlights, perms, and more. They'll work with you to find out what you're looking for—whether it's a new look or a change in texture—and then help bring it all together.                                    
+                                    </p>
+                                    <p class="paragraph">
+                                        We believe that beauty starts with self-expression, so we strive to create a space where women feel free to be themselves while still being able to have fun experimenting with their hair color or style. You'll never feel judged by someone else's opinion of how you should wear your hair or what kind of cut makes your face look the best!                                    
+                                    </p>
+                                    
+                                </div>
+                                <div class="contentContainer shadow radius">
+                                    <ul class="list paragraph">
+                                        <li class="list__item"><span class="list__item--offer">Haircut</span> starts at <span class="list__item--price">$15</span></li>
+                                        <li class="list__item"><span class="list__item--offer">Blow Dry</span> starts at <span class="list__item--price">$25</span></li>
+                                        <li class="list__item"><span class="list__item--offer">Color</span> starts at <span class="list__item--price">$30</span></li>
+                                        <li class="list__item"><span class="list__item--offer">Highlights</span> starts at <span class="list__item--price">$45</span></li>
+                                        <li class="list__item"><span class="list__item--offer">Texture</span> starts at <span class="list__item--price">$45</span></li>
+                                        <li class="list__item"><span class="list__item--offer">Styling Treatment</span> starts at <span class="list__item--price">$50</span></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="recommend shadow radius">
+                                    <p class="paragraph">10+ people have been at the salon</p>
+                                    <div class="recommend__users">
+                                        <img src="img/user-1.jpg" alt="User 1" class="recommend__photo">
+                                        <img src="img/user-2.jpg" alt="User 2" class="recommend__photo">
+                                        <img src="img/user-3.jpg" alt="User 3" class="recommend__photo">
+                                        <img src="img/user-4.jpg" alt="User 4" class="recommend__photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="customer-reviews">                                
+                                <!-- <figure class="review shadow radius">
+                                    <blockquote class="review__text">
+                                        I've been going to Beauty Box since last year and it's always given me the best haircut. I trust them with my life and wouldn't go anywhere else. The people there are really nice too, which is really important in a hair salon.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <div class="review__user--left">
+                                            <img src="img/user-2.jpg" alt="User image" class="review__user-photo">
+                                            <p class="review__user-name">Johnsie Jock</p>
+
+                                        </div>
+                                        <div class="review__user--right">
+
+                                            <p class="review__user-date">Oct 4, 2022</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>                                 -->
+
+                                <button class="btn-inline">View more reviews <span>&rarr;</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <main class="salon-view hidden" id="gallery">
+                    <div class="overview">
+                        <div class="overview__left">
+                            <h1 class="heading-primary">Beauty Box</h1>
+                            <div class="ratingcategoryContainer">
+                                <div>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                </div>
+                                <h6 class="ratingcategoryContainer__category">Hair Salon</h6>
+                            </div>
+                            
+                        </div>
+
+                        <div class="overview__right">
+                            <button class="btn">
+                                <span class="btn__visible">Book Now</span>
+                                <span class="btn__invisible">Book an appointment</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-view-content">
+                        <div class="promo shadow radius">
+                            <h3 class="promo__text heading-secondary">📣 Ongoing promos for the month of September! Don't miss out! ✂️
+                            </h3>
+                        </div>
+
+                        <h1 class="heading-secondary margin-top-medium">Store Location Gallery</h1>
+                        <div class="gallery-content margin-top-small" id="store-location-gallery">
+                            <div class="gallery-image-container">
+                                <img src="img/gallery-1.jpg" alt="gallery 1" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/gallery-2.jpg" alt="gallery 2" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/salon-location-2.jpg" alt="gallery 3" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/salon-location-3.jpg" alt="gallery 4" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/salon-location-4.jpg" alt="gallery 4" class="gallery-image-container__photo">
+                            </div> 
+                        </div>
+
+                        <h1 class="heading-secondary margin-top-big">Clients Gallery</h1>
+                        <div class="gallery-content margin-top-small margin-bottom-small">
+                            <div class="gallery-image-container">
+                                <img src="img/gallery-4.jpg" alt="gallery 1" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/clients-gallery-1.jpg" alt="gallery 2" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/clients-gallery-2.jpg" alt="gallery 3" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/clients-gallery-3.jpg" alt="gallery 4" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/clients-gallery-4.jpg" alt="gallery 5" class="gallery-image-container__photo">
+                            </div> 
+                            <div class="gallery-image-container">
+                                <img src="img/clients-gallery-5.jpg" alt="gallery 6" class="gallery-image-container__photo">
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    
+                </main>
+
+                <main class="salon-view hidden" id="stylists">
+                    <div class="overview">
+                        <div class="overview__left">
+                            <h1 class="heading-primary">Beauty Box</h1>
+                            <div class="ratingcategoryContainer">
+                                <div>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                </div>
+                                <h6 class="ratingcategoryContainer__category">Hair Salon</h6>
+                            </div>
+                            
+                        </div>
+
+                        <div class="overview__right">
+                            <button class="btn">
+                                <span class="btn__visible">Book Now</span>
+                                <span class="btn__invisible">Book an appointment</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-view-content">
+                        <div class="promo shadow radius">
+                            <h3 class="promo__text heading-secondary">📣 Ongoing promos for the month of September! Don't miss out! ✂️
+                            </h3>
+                        </div>
+
+                        <h1 class="heading-primary margin-top-medium margin-bottom-medium text-center">Our Best Stylists!</h1>
+                        
+                        <div class="square-images-gallery-content" id="stylists-img-container">
+                            <!-- <div class="square-images">
+                                <div class="square-images__container square-images__container--circle">
+                                    <img src="img/stylist-img-1.jpg" alt="Stylist 1" class="square-images__img">
+                                </div>
+                                <div class="square-images__text">
+                                    <h4 class="square-images__text--heading">Marilyn Ramirez</h4>
+                                    <h4 class="square-images__text--caption">Senior stylist</h4>
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </main>
+
+                <main class="salon-view hidden" id="package">
+                    <div class="overview">
+                        <div class="overview__left">
+                            <h1 class="heading-primary">Beauty Box</h1>
+                            <div class="ratingcategoryContainer">
+                                <div>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                    <svg class="ratingcategoryContainer__icon-star">
+                                        <use href="img/sprite.svg#icon-star-full"></use>
+                                    </svg>
+                                </div>
+                                <h6 class="ratingcategoryContainer__category">Hair Salon</h6>
+                            </div>
+                            
+                        </div>
+
+                        <div class="overview__right">
+                            <button class="btn">
+                                <span class="btn__visible">Book Now</span>
+                                <span class="btn__invisible">Book an appointment</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-view-content">
+                        <div class="promo shadow radius">
+                            <h3 class="promo__text heading-secondary">📣 Ongoing promos for the month of September! Don't miss out! ✂️
+                            </h3>
+                        </div>
+
+                        <h1 class="heading-primary margin-top-medium margin-bottom-medium text-center">Salon Packages</h1>
+                        
+                        <div class="square-images-gallery-content" id="packages-img-container">
+                            <!-- <div class="square-images">
+                                <div class="square-images__container">
+                                    <img src="img/stylist-img-5.jpg" alt="Stylist 1" class="square-images__img">
+                                </div>
+                                <div class="square-images__text">
+                                    <h4 class="square-images__text--heading">Marilyn Ramirez</h4>
+                                    <h4 class="square-images__text--caption">Senior stylist</h4>
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </main>
+            </div>
+        
+    </body>
+</html>

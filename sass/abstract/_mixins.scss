@@ -1,0 +1,7 @@
+@mixin userImage($height, $width, $boxSizing: 'border-box', $border: '' ){
+    height: $height;
+    width: $width;
+    border-radius: 50px;
+    box-sizing: $boxSizing;
+    border: $border;
+}

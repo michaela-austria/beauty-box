@@ -1,0 +1,20 @@
+.overview{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-white;
+    border-bottom: $border-line;
+    
+
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+
+    &__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

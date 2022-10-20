@@ -1,0 +1,28 @@
+.ratingcategoryContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-pink-4;
+    padding: 0 3rem;
+    order: -1;
+
+    &__icon-star{
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: currentColor;
+        stroke: $color-white;
+        stroke-width: 3px;
+    
+        &:not(:first-child){
+            margin-left: -1.3rem;
+        }
+    }
+
+    &__category{
+        font-size: $fs-base;
+        text-transform: uppercase;
+    }
+}
+
+
+

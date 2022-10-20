@@ -1,0 +1,87 @@
+.btn{
+    font-size: $fs-h6;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    border: none;
+    background-image: linear-gradient(to bottom, $color-pink-3, $color-pink-4);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s;
+    
+    & > *{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transition: all .3s;
+    }
+
+    &__visible{
+        padding: 3.5rem 8rem;
+    }
+
+    &__invisible{
+        position: absolute;
+        padding: 2rem 0;
+        left: 0;
+        top: -100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &:hover &__visible,
+    &:focus &__visible{
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible,
+    &:focus &__invisible{
+        top: 0;
+    }
+
+    &:focus,
+    &:hover{
+        outline: none;
+        background-image: linear-gradient(to top, $color-pink-3, $color-pink-4);
+        border-radius: 5px 0 0 5px;
+        padding-right: 50px;
+        letter-spacing: $ls-default;
+        box-shadow: -9px -2px 19px -7px rgba($color-dark-3,0.16);
+        animation: pulsate 1s infinite;
+    }
+}
+
+
+.btn-inline{
+    border: none;
+    color: $color-pink-4;
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background: transparent;
+    margin-top: 3rem;
+    transition: all .2s;
+    cursor: pointer;
+
+    & span{
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
+
+    &:hover{
+        color: $color-dark-3;
+
+        span{
+            margin-left: 8px;
+        }
+    }
+
+    &:focus{
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+}

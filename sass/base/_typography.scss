@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+
+body{
+    font-family: $fs-default;
+    font-weight: $fw-regular;
+    font-size: $fs-base;
+    color: $color-dark-2;
+}
+
+.heading-primary{
+    font-size: $fs-h1;
+    font-weight: $fw-xtrabold;
+    color: inherit;
+}
+
+.heading-secondary{
+    font-size: $fs-h5;
+    font-weight: $fw-xtrabold;
+    color: inherit;
+}
+
+.paragraph{
+    font-size: $fs-base;
+    font-weight: $fw-regular;
+    letter-spacing: $ls-default;
+    color: inherit;
+
+    &:not(:last-of-type){
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,87 @@
+.content{
+    display: flex;
+}
+
+.sidebar{
+    background-color: $color-dark-2;
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.salon-view{
+    background-color: $color-grey;
+    flex: 1;
+    padding-bottom: 5rem;
+}
+
+.gallery{
+    display: flex;
+
+    &__item{
+        overflow: hidden;
+
+        &:nth-child(3) {
+            img{
+                transform: scale(1.33);
+            }
+        }
+    }
+
+    &__photo{
+        width: 100%;
+        display: block;
+    }
+}
+
+.salon-view-content,
+.gallery-view-content{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.promo{
+    padding: 2.4rem;
+    background: rgb(250,238,231);
+    background: radial-gradient(circle, rgba(250,238,231,1) 0%, rgba(255,198,199,1) 100%);
+
+    &__text{
+        letter-spacing: $ls-default;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.detail{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.description{
+    flex: 0 0 60%;
+    margin-right: 2rem;
+}
+
+.customer-reviews{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > *:not(:last-child){
+        margin-bottom: 2rem;
+    }
+}
+
+
+.square-images-gallery-content{
+    // background-color: aqua;
+    width: 106rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+}

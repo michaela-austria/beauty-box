@@ -1,0 +1,36 @@
+.list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+
+        &--offer,
+        &--price{
+            font-weight: $fw-bold;
+        }
+
+    }
+
+    &__item::before{
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: .7rem;
+
+        background-image: url(/img/SVG/scissors.svg);
+        background-size: cover;
+
+        @supports (-webkit-mask-image:url()) or (mask-image: url()){
+            background-color: $color-pink-4;
+            -webkit-mask-image: url(/img/SVG/scissors.svg);
+            -webkit-mask-size: cover;
+            mask-image: url(/img/SVG/scissors.svg);
+            mask-size: cover;
+            background-image: none;
+        }
+    }
+}

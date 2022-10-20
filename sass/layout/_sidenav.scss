@@ -1,0 +1,76 @@
+.side-nav{
+    font-size: $fs-base;
+    font-weight: $fw-medium;
+    letter-spacing: $ls-default;
+    list-style: none;
+    margin-top: 3.5rem;
+
+    &__item{
+        position: relative;
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__item::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-image: linear-gradient(to right, $color-pink-4, $color-pink-3);
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .4s cubic-bezier(1,-0.01,0,1.01) .2s,
+                    background-image .1s;
+    }
+
+    &__item:hover::before,
+    &__item--active::before{
+        transform: scaleY(1);
+        width: 100%;
+    }
+
+    &__item:active::before{
+        // background-color: $color-pink-4;
+        background-image: linear-gradient(to right, $color-pink-4, $color-pink-3);
+    }
+
+    &__link:link,
+    &__link:visited{
+        color: $color-grey;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 2rem 5.2rem;
+        position: relative;
+        z-index: 20;
+
+        display: flex;
+        align-items: center;
+
+        transition: margin-left .4s cubic-bezier(1,-0.01,0,1.01) .2s,;
+
+        &:hover{
+            margin-left: 1.5rem;
+        }
+
+    }
+
+    
+
+    &__icon{
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: currentColor;
+        margin-right: 2rem;
+    }
+}
+
+.copyright{
+    color: $color-white;
+    font-size: $fs-caption;
+    text-align: center;
+    padding: 3rem;
+}

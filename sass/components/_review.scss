@@ -1,0 +1,89 @@
+.review{
+    background-color: $color-white;
+    padding: 3rem;
+    font-size: $fs-base;
+    position: relative;
+    overflow: hidden;
+
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+    & > *:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+    &__text{
+        line-height: 2.5rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__user{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        &--left{
+            display: flex;
+            align-items: center;
+        }
+
+        &--right{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__user-name{
+        font-size: $fs-base;
+        font-weight: $fw-bold;
+        letter-spacing: $ls-default;
+    }
+
+    &__user-photo{
+        @include userImage(4rem, 4rem);
+        margin-right: 1rem;
+    }
+
+    
+    &__user-date{
+        font-size: $fs-caption;
+    }
+    
+    &:before { 
+        content: "\201D";
+        position: absolute;
+        top: -3.75rem;
+        right: -0.8rem;
+        font-size: 30rem;
+        line-height: 1;
+        font-family: sans-serif;
+        color: $color-grey;
+        z-index: 1;
+    }
+
+}
+
+
+.recommend{
+    background-color: $color-white;
+    padding: 3rem;
+    font-size: $fs-base;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__users{
+        display: flex;
+    }
+
+    &__photo{
+        @include userImage(3rem, 3rem, content-box, 3px solid $color-white);
+
+        &:not(:last-child){
+            margin-right: -1rem;
+        }
+    }
+}
