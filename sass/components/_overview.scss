@@ -3,17 +3,33 @@
     justify-content: space-between;
     background-color: $color-white;
     border-bottom: $border-line;
+
+    @media only screen and (max-width: $bp-small-1) {
+        flex-direction: column;
+    }
     
 
     &__left{
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-small-1) {
+            justify-content: center;
+            flex-direction: column-reverse;
+            padding: 1rem;
+        }
+
+        
     }
 
     &__right{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-small-1) {
+            padding: 1rem;
+        }
     }
 
 

@@ -6,6 +6,10 @@
     padding: 0 3rem;
     order: -1;
 
+    @media only screen and (max-width: $bp-small-1) {
+        flex-direction: row;
+    }
+
     &__icon-star{
         width: 2.5rem;
         height: 2.5rem;
